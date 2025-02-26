@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lý thuyết HTML</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css1.css" type="text/css">
+</head>
+<body>
+  <nav id="sidebar">
+    <h2>HTML</h2>
+    <ul>
+      <li><a class="nav-item" href="#Introduction">Giới thiệu</a></li>
+      <li>
+        <a class="nav-item" href="#html_editors">Soạn thảo HTML</a>
+      </li>
+      <li>
+        <a class="nav-item" href="#html_elements">Phần tử HTML</a>
+      </li>
+      <li><a class="nav-item" href="#html_attributes">Thuộc tính HTML</a></li>
+      <li><a class="nav-item" href="#html_heading">Đầu đề HTML</a></li>
+      <li>
+        <a class="nav-item" href="#html_paragraph">Đoạn văn HTML</a>
+      </li>
+      <li><a class="nav-item" href="#html_style">Thuộc tính Style HTML</a></li>
+      <li><a class="nav-item" href="#html_formatting">Định dạng HTML</a></li>
+      <li><a class="nav-item" href="#reference">Tham khảo</a></li>
+    </ul>
+  </nav>
+  <main id="documentation">
+    <section id="Introduction">
+      <h2>Giới thiệu</h2>
+      <article>
+        <p>
+          HTML là chữ viết tắt của Hypertext Markup Language, là ngôn ngữ được sử dụng rộng rãi nhất để viết các trang Web.
+
+Hypertext là cách mà các trang Web (các tài liệu HTML) được kết nối với nhau. Và như thế, đường link có trên trang Web được gọi là Hypertext.
+
+Như tên gọi đã gợi ý, HTML là ngôn ngữ đánh dấu bằng thẻ (Markup Language), nghĩa là bạn sử dụng HTML để đánh dấu một tài liệu text bằng các thẻ (tag) để nói cho trình duyệt Web cách để cấu trúc nó để hiển thị ra màn hình.
+
+Lúc đầu, HTML được phát triển với mục đích để xác định cấu trúc của các tài liệu như các tiêu đề, các đoạn văn, các danh sách… và tạo sự thuận lợi cho việc chia sẻ thông tin khoa học giữa các nhà nghiên cứu.
+
+Bây giờ, HTML đã được sử dụng rộng rãi để định dạng các trang Web với sự giúp đỡ của các tag khác nhau có trong ngôn ngữ HTML.
+        </p>
+        <h3>Tài liệu html</h3>
+        <pre>
+&lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;</pre>
+      </article>
+    </section>
+    <section id="html_editors">
+      <h2>Soạn thảo HTML</h2>
+      <article>
+        <p>
+          Mặc dù ta có thể sử dụng Notepad để tạo và chỉnh sửa tài liệu HTML, nhưng bạn nên cài đặt một trình soạn thảo mã nguồn mở. Có rất nhiều phần mềm soạn thảo văn bản miễn phí trên internet, cung cấp giao diện người dùng tương tác tốt hơn và một số chức năng bổ sung mà bạn sẽ không có trong Notepad.
+        </p>
+        <p>Dưới đây là danh sách 4 trình soạn thảo văn bản HTML hàng đầu mà bạn có thể lựa chọn:</p>
+
+        <ul>
+          <li>Sublime Text Editor</li>
+          <li>Notepad++</li>
+          <li>Visual Studio Code</li>
+          <li>Atom</li>
+        </ul>
+      </article>
+    </section>
+    <section id="html_elements">
+      <h2>Phần tử HTML</h2>
+      <article>
+        <p>
+         Các phần tử HTML cung cấp ý nghĩa ngữ nghĩa cho nội dung trang web. Chúng ta thường sử dụng thuật ngữ phần tử HTML và thẻ HTML thay thế cho nhau, nhưng về mặt kỹ thuật, cả hai khác nhau. Thẻ HTML chỉ là một chuỗi ký tự bên trong dấu ngoặc nhọn <>, trong khi phần tử HTML là một tập hợp gồm thẻ mở, thuộc tính, nội dung và thẻ đóng của nó. Ví dụ:
+        </p>
+        <pre>&lt;p class= "para"&gt; Xin chào 12A13 &lt;/p&gt;</pre>
+      </article>
+    </section>
+    <section id="html_attributes">
+      <h2>Thuộc tính HTML</h2>
+      <article>
+        <p>
+          Một thuộc tính được sử dụng để xác định đặc trưng của một phần tử HTML và được đặt trong một thẻ mở của phần tử đó. Tất cả các thuộc tính được chia thành 2 phần : tên và một giá trị:
+          <strong> Ví dụ </strong>:
+        </p>
+        <pre>&lt;image src= "cho.jpg" alt ="cho image"&gt;</pre>
+        <p>
+          Trong ví dụ này, src="cho.jpg" và alt="cho image" là hai thuộc tính, trong đó src và alt là tên thuộc tính, còn "cat.jpg" và "cat image" là giá trị thuộc tính. Thuộc tính alt là tùy chọn, nhưng src là bắt buộc vì src chỉ định hình ảnh nào cần hiển thị. Phải có ít nhất một khoảng trắng giữa hai thuộc tính và giá trị của các thuộc tính phải được đặt trong dấu ngoặc kép. Một số HTML quan trọng nhất..."
+        </p>
+      </article>
+    </section>
+    <section id="html_heading">
+      <h2>Đầu đề HTML</h2>
+      <p>
+        Bất kỳ tài liệu nào cũng đều bắt đầu với một đầu đề. Bạn có thể sử dụng các kích cỡ khác nhau cho đầu đề của bạn. HTML cũng có 6 cỡ khác nhau cho đầu đề, sử dụng các thẻ cơ bản là &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, và &lt;h6&gt;. Trong khi hiển thị bất cứ một đầu đề nào, các trình duyệt sẽ thêm (để cách) một dòng trước và một dòng sau đầu đề đó.
+        <strong> Ví dụ </strong>:
+      </p>
+      <pre>
+&lt;h1&gt;Đầu đề 1 &lt;/h1&gt;
+            &lt;h2&gt;Đầu đề 2 &lt;/h2&gt;
+            &lt;h3&gt;Đầu đề 3 &lt;/h3&gt;
+            &lt;h4&gt;Đầu đề 4 &lt;/h4&gt;
+            &lt;h5&gt;Đầu đề 5 &lt;/h5&gt;
+            &lt;h6&gt;Đầu đề 6 &lt;/h6&gt;</pre>
+    </section>
+    <section id="html_paragraph">
+      <h2>Đoạn văn HTML</h2>
+      <article>
+        <p>
+         Thẻ <p>, với p là viết tắt của Paragraph, giúp cấu trúc tài liệu HTML của bạn thành các đoạn văn khác nhau. Mỗi một đoạn văn trong tài liệu HTML sẽ ở trong một thẻ mở &lt;p&gt; và một thẻ đóng &lt;/p&gt; như ví dụ bên dưới.
+        </p>
+        <pre>
+&lt;p&gt; Xin chào bọn mình là nhóm 9 12A13 &lt;/p&gt;
+                &lt;p&gt; Đây là vài điều cơ bản về HTML. &lt;/p&gt;</pre>
+      </article>
+    </section>
+    <section id="html_style">
+      <h2>Thuộc tính Style HTML</h2>
+      <article>
+        <p>
+          Thuộc tính style trong HTML được sử dụng để áp dụng các kiểu dáng (CSS) trực tiếp cho một phần tử HTML cụ thể.
+        </p>
+        <pre>&lt;body style="background-color:yellow;"&gt;
+
+                &lt;h1&gt;Thành viên&lt;/h1&gt;
+                &lt;p&gt;Chí Tùng&lt;/p&gt;
+                
+                &lt;/body&gt;</pre>
+      </article>
+    </section>
+    <section id="html_formatting">
+      <h2>Định dạng</h2>
+      <article>
+        <p>
+         Nếu bạn sử dụng một ứng dụng Word, bạn phải làm quen với các thao tác để in đậm, in nghiêng, hay gạch chân; đó là 3 trong số 10 tùy chọn có sẵn để chỉ cách mà văn bản xuất hiện trong HTML và XHTML.
+        </p>
+        <div class="hscroll">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                 
+                    Phần tử
+                  
+                </td>
+                <td>
+                  Tác dụng
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;b&gt;
+                </td>
+                <td>
+                  In đậm
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;strong&gt;
+                </td>
+                <td>
+                  Giống &lt;b&gt;, nhưng độ ưu tiên cao hơn.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;i&gt;
+                </td>
+                <td>
+                  In nghiêng
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;em&gt;
+                </td>
+                <td>
+                 In nghiêng nhưng dùng để nhấn mạnh văn bản
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;mark&gt;
+                </td>
+                <td>
+                  Đánh đấu văn bản với nền màu vàng mặc định
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;small&gt;
+                </td>
+                <td>
+                  Giảm cỡ chữ
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;del&gt;
+                </td>
+                <td>
+                  Gạch ngang giữa văn bản
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;ins&gt;
+                </td>
+                <td>
+                  Gạch chân văn bản
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;sub&gt;
+                </td>
+                <td>
+                  Chỉ số dưới, kích cỡ bằng các kí tự xung quanh nhưng chiều cao bằng 1 nửa
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &lt;sup&gt;
+                </td>
+                <td>
+                  Chỉ số trên, kích cỡ bằng các kí tự xung quanh nhưng chiều cao bằng 1 nửa
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section id="reference">
+      <h2>Tham khảo</h2>
+      <article>
+        <ul>
+          <li>
+            Tất cả tài kiệu trên được tham khảo từ nguồn:
+            <a href="https://www.vietjack.com/html/index.jsp" target="_blank">HTML Lý thuyết</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
