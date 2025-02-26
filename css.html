@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lý thuyết CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css1.css" type="text/css">
+</head>
+<body>
+  <nav id="sidebar">
+    <h2>CSS</h2>
+    <ul>
+      <li><a class="nav-item" href="#Introduction">Giới thiệu</a></li>
+      <li>
+        <a class="nav-item" href="#html_editors">Mục đích và Cấu trúc</a>
+      </li>
+<li>
+        <a class="nav-item" href="#html_elements">Cách sử dụng</a>
+      </li>
+      <li>
+        <a class="nav-item" href="#html_elements">Các khái niệm chính</a>
+      </li>
+      <li><a class="nav-item" href="#html_attributes">Lợi ích</a></li>
+      <li><a class="nav-item" href="#html_heading">Học CSS cơ bản ở đâu?</a></li>
+    </ul>
+  </nav>
+  <main id="documentation">
+    <section id="Introduction">
+      <h2>Giới thiệu</h2>
+      <article>
+        <p>
+          CSS (Cascading Style Sheets) là ngôn ngữ định dạng kiểu dáng được sử dụng để thiết kế và trình bày các trang web. Nó giúp bạn kiểm soát giao diện và bố cục của các phần tử HTML trên trang web, tạo ra các thiết kế trực quan và hấp dẫn. Dưới đây là tất cả những gì bạn cần biết về CSS.
+        </p>
+        <h3>Mẫu định dạng CSS:</h3>
+        <pre>
+&lt;style&gt;
+                h1 {color:red;}
+                h1 {border: 2px solid blue;}
+                p {text-intent:15px;}
+                &lt;/style&gt;
+                </pre>
+      </article>
+    </section>
+    <section id="html_editors">
+      <h2>Mục đích và Cấu trúc</h2>
+      <article>
+        
+
+        <ul>
+          <li>Mục đích:
+<ul>
+<li>Bộ chọn (Selectors): Chọn các phần tử HTML để áp dụng kiểu.</li>
+<li>Thuộc tính (Properties): Xác định các khía cạnh cần thay đổi (ví dụ: color, font-size).</li>
+<li>Giá trị (Values): Xác định cài đặt cho thuộc tính (ví dụ: red, 16px).</li>
+<li>Quy tắc CSS (CSS Rules): Kết hợp bộ chọn, thuộc tính và giá trị.</li>
+</ul></li>
+          <li>Cấu trúc:
+<ul>
+<li>Tách biệt nội dung (HTML) và trình bày (CSS).</li>
+<li>Kiểm soát giao diện: màu sắc, phông chữ, bố cục, hiệu ứng.</li>
+<li>Đảm bảo tính nhất quán trên toàn bộ trang web.</li>
+<li>Tạo thiết kế đáp ứng, phù hợp với nhiều thiết bị.</li>
+</ul></li>
+          
+        </ul>
+      </article>
+    </section>
+    <section id="html_elements">
+      <h2>Cách sử dụng</h2>
+      <article>
+        <ul>
+<li>CSS nội tuyến (Inline CSS): Viết trực tiếp trong thẻ HTML bằng thuộc tính "style".</li>
+<li>CSS nhúng (Internal/Embedded CSS): Viết trong thẻ &lt;style&gt; trong phần &lt;head&gt; của trang HTML.</li>
+<li>CSS liên kết (External CSS): Viết trong file .css riêng biệt và liên kết đến trang HTML bằng thẻ &lt;link&gt;. (Khuyến khích sử dụng cách này)</li>
+</ul>
+        
+      </article>
+    </section>
+    <section id="html_attributes">
+      <h2>Các khái niệm chính</h2>
+      <article>
+         <ul>
+          <li>Bộ chọn CSS:
+<ul>
+<li>Bộ chọn phần tử (Element selectors): Chọn các phần tử HTML dựa trên tên thẻ (ví dụ: p, h1, div).</li>
+<li>Bộ chọn lớp (Class selectors): Chọn các phần tử HTML có thuộc tính "class" cụ thể (ví dụ: .my-class).</li>
+<li>Bộ chọn ID (ID selectors): Chọn phần tử HTML có thuộc tính "id" duy nhất (ví dụ: #my-id).</li>
+<li>Bộ chọn thuộc tính (Attribute selectors): Chọn các phần tử HTML có thuộc tính cụ thể.</li>
+<li>Bộ chọn giả (Pseudo-classes): Chọn các phần tử dựa trên trạng thái của chúng (ví dụ: :hover, :active).</li>
+<li>Bộ chọn giả phần tử (Pseudo-elements): Chọn các phần con của phần tử (ví dụ: ::before, ::after).</li>
+</ul></li>
+          <li>Mô hình hộp (Box Model):
+<ul>
+<li>Nội dung (Content): Nội dung thực tế của phần tử.</li>
+<li>Đệm (Padding): Khoảng trống giữa nội dung và đường viền.</li>
+<li>Đường viền (Border): Đường bao quanh phần tử.</li>
+<li>Lề (Margin): Khoảng trống bên ngoài đường viền.</li>
+</ul></li>
+          <li>Bố cục (Layout):
+<ul>
+<li>Flexbox: Mô hình bố cục linh hoạt, giúp sắp xếp các phần tử dễ dàng.</li>
+<li>Grid: Mô hình bố cục lưới, cho phép tạo bố cục phức tạp</li>
+<li>Float: Sắp xếp các phần tử nằm cạnh nhau.</li>
+<li>Position: Định vị các phần tử trên trang.</li>
+</ul></li>
+          <li>Đơn vị:
+<ul>
+<li>px (pixel): Đơn vị tuyệt đối.</li>
+<li>em, rem: Đơn vị tương đối, dựa trên kích thước phông chữ.</li>
+<li>%: Đơn vị phần trăm.</li>
+<li>vw, vh: đơn vị tương đối với chiều rộng và chiều cao của viewport.</li>
+</ul></li>
+          
+        </ul>
+      </article>
+    </section>
+    <section id="html_heading">
+      <h2>Lợi ích</h2>
+      <ul>
+<li>Kiểm soát giao diện chi tiết.</li>
+<li>Giảm kích thước file HTML.</li>
+<li>Cải thiện khả năng tiếp cận.</li>
+<li>Tăng tốc độ tải trang.</li>
+<li>Giúp trang web trở nên chuyên nghiệp và đẹp mắt hơn.</li></ul>
+    </section>
+    <section id="html_paragraph">
+      <h2>Học CSS cơ bản ở đâu?</h2>
+<artical>
+<p> Dưới dây là một số nguồn để học tập và thực hành CSS:</p>
+</artical>
+<ul>
+<li>MDN Web Docs: Tài liệu đầy đủ và chi tiết về CSS.</li>
+<li>W3Schools: Hướng dẫn và ví dụ thực hành CSS.</li>
+<li>freeCodeCamp: Các khóa học CSS miễn phí.</li>
+<li>CSS-tricks: Website cung cấp nhiều thủ thuật và kiến thức chuyên sâu về CSS.</li></ul>
+    </section>
+    
+  </main>
+</body>
